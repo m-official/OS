@@ -1,0 +1,11 @@
+
+
+
+
+curl -sSL https://github.com/eylenburg/linoffice/raw/refs/heads/main/quickstart.sh -o quickstart.sh && chmod +x quickstart.sh && ./quickstart.sh
+
+
+
+
+
+sudo apt purge -y wine* winetricks && sudo apt autoremove -y && sudo rm -f /etc/apt/sources.list.d/*winehq*.list && sudo dpkg --add-architecture i386 && sudo mkdir -pm755 /etc/apt/keyrings && sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key && sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/noble/winehq-noble.sources && sudo apt update && sudo apt install --install-recommends winehq-stable -y && wine --version

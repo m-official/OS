@@ -1,0 +1,25 @@
+sudo apt install open-vm-tools open-vm-tools-desktop
+sudo vmhgfs-fuse .host:/ /mnt/hgfs -o allow_other
+sudo mkdir -p /mnt/hgfs
+https://chatgpt.com/share/68d89998-71d8-8003-9563-66cc082f085d
+
+
+
+https://chatgpt.com/share/68db5ab6-0900-8004-b1ef-ef96a0468b67
+
+
+WINEPREFIX=~/.PlayOnLinux/wineprefix/office2013 winetricks dotnet40 corefonts msxml6
+
+
+
+sudo dpkg --add-architecture i386 && \
+sudo apt update && \
+sudo apt purge -y wine* winetricks && \
+sudo apt autoremove -y && \
+sudo apt install -y --install-recommends wine64 wine32 winetricks
+
+
+
+
+
+https://chatgpt.com/share/69080348-ef00-8003-ad12-a5dc9c372e9b
